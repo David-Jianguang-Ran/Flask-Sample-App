@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block container %}
+
+  <div id="react-root"> </div>
+
+  <script>
+    let initial_data = {{ context.object | tojson }}
+  </script>
+
+  <script src="{{ url_for('static',filename='blogListViewerMin.js') }}"> </script>
+
+{% endblock %}

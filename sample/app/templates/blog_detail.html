@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block container %}
+
+  <div id="react-root"></div>
+
+  <script>
+    let post = {{ context.object | tojson }};
+    let CSRF_TOKEN = {{ context.csrf_token | tojson }};
+  </script>
+
+    <script src="{{ url_for('static',filename='blogDetailViewerMin.js') }}"> </script>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block container %}
+  <div>
+    <div class="col-sm-8 blog-main">
+      <h4> About David Ran</h4>
+      <img src="{{ url_for('static',filename='IMG_20190718_223557.jpg') }}"
+           alt="some guy in car"
+           style="width: 40em"
+      >
+
+      <p>
+        Renegade Chinese, Loves leaning new ideas and perspectives <br>
+        Python programmer, firm believer of web technologies <br>
+        Hobby machine learning practitioner, breaker of raspberry Pi's <br>
+        Weird idea machine, always eager innovate</p>
+    </div>
+
+    <div class="sidebar-module">
+      <h4>Links to Stuff</h4>
+      <ol class="list-unstyled">
+        <li><a href="https://github.com/David-Jianguang-Ran">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jianguangran/">LinkedIn</a></li>
+      </ol>
+    </div>
+
+  </div>
+
+{% endblock %}
